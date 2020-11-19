@@ -24,6 +24,21 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatBadgeModule} from '@angular/material/badge';
 import { InspirationsComponent } from './inspirations/inspirations.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { SingleProductComponent } from './single-product/single-product.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { PaymentComponent } from './payment/payment.component';
+import { AllordersComponent } from './allorders/allorders.component';
+import { SingleOrderComponent } from './single-order/single-order.component';
+import { WishListComponent } from './wish-list/wish-list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SupportComponent } from './support/support.component';
+import { ChatComponent } from './chat/chat.component';
+import { IssuesComponent } from './issues/issues.component';
+import { ReviewComponent } from './review/review.component';
+import { RatingModule } from 'ng-starrating';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +47,20 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     TipNtrickCompComponent,
     CobUserpicsCompComponent,
     LandingCompComponent,
-    InspirationsComponent
+    InspirationsComponent,
+    AllproductsComponent,
+    SingleProductComponent,
+    CartComponent,
+    CheckoutComponent,
+    PaymentComponent,
+    AllordersComponent,
+    SingleOrderComponent,
+    WishListComponent,
+    ProfileComponent,
+    SupportComponent,
+    ChatComponent,
+    IssuesComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +79,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatFormFieldModule,
     MatSelectModule,
     MatBadgeModule,
-    CarouselModule
+    CarouselModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

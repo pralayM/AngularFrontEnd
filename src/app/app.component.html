@@ -1,11 +1,11 @@
 <mat-toolbar>
-  <span><img src="assets/logo/logo@2x.png" height="50"></span>
-  <span><button mat-button>Products</button></span>
+  <span><a routerLink='/'><img src="assets/logo/logo@2x.png" height="50"></a></span>
+  <span><button mat-button routerLink='/products'>Products</button></span>
   <span style="vertical-align: middle;"><button mat-button>
        <mat-label>Categories</mat-label>
       <mat-icon matSuffix style="margin-bottom: 11px;"><img src="assets/icons/chevron-down.svg"></mat-icon>
   </button></span>
-  <span><button mat-button>Contact</button></span>
+  <span><button mat-button routerLink='/support'>Contact</button></span>
   <span class="example-spacer"></span>
   <span>
       <div id="searchbar">
@@ -20,16 +20,66 @@
   </span>
   <span class="example-spacer"></span>
 
-  <img src="assets/icons/heart.svg" class="avatar" height="30" width="30">
-  <img src="assets/icons/shopping-cart.svg" class="avatar" height="30" width="30">
-  <img src="assets/logo/profile.png" class="avatar" height="30" width="30">
+  <a routerLink='/wishlist'> <img src="assets/icons/heart.svg" class="avatar" height="30" width="30"></a>
+ <a routerLink='/cart'><img src="assets/icons/shopping-cart.svg" class="avatar" height="30" width="30"></a>
+ <a routerLink='/profile'><img src="assets/logo/profile.png" class="avatar" height="30" width="30"></a>
 
 </mat-toolbar>
 <ng-container>
-  <app-parent-comp></app-parent-comp>
+  <router-outlet></router-outlet>
 </ng-container>
+<hr>
 <footer>
   <ng-container>
+ <div class="row" align=justify>
+   <div class="col-sm-3">
+    <li id="head"><img src="assets/logo/logo@1x.png"></li>
+    <li><p>Worldwide shoe store since 2020. We sell over 1000+ branded products on our website</p></li>
+    <li>
+      <p>
+        <mat-icon matPreffix ><img src="assets/icons/map-pin.svg"></mat-icon>
+        MUMBAI , INDIA
+      </p>
+    </li>
+    <li>
+      <p>
+        <mat-icon matPreffix ><img src="assets/icons/phone.svg"></mat-icon>
+        +91 8927152108
+      </p>
+    </li>
+    <li>www.cobshop.in</li>
+   </div>
+   <div class="col-sm-2">
+    <li><b>MENU</b></li>
+    <li><p>Products</p></li>
+    <li><p>Rooms</p></li>
+    <li><p>Inspirations</p></li>
+    <li><p>About Us</p></li>
+    <li><p>Terms & Policy</p></li>
+  </div>
+  <div class="col-sm-2">
+    <li><b>Account</b></li>
+    <li><p>my Account</p></li>
+    <li><p>Checkout</p></li>
+    <li><p>My Cart</p></li>
+    <li><p>My catalog</p></li>
 
+  </div>
+  <div class="col-sm-2">
+    <li><b>Stay Connected</b></li>
+    <li><p>Facebook</p></li>
+    <li><p>Instagram</p></li>
+    <li><p>Twitter</p></li>
+
+  </div>
+  <div class="col-sm-3">
+    <li><b>Stay Updated</b></li>
+    <li>
+      <input matInput placeholder="Enter Your Email">
+      <button mat-button><img src="assets/icons/send.svg"></button>
+    </li>
+  </div>
+
+ </div>
 </ng-container>
 </footer>
